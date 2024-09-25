@@ -1,0 +1,46 @@
+
+body {
+    font-size: 1.5em; 
+    line-height: 1.6; 
+    background-color:white;
+}
+
+header {
+    text-align: center;
+    margin: 20px 0;
+    text-align: auto;
+}
+
+h1, h2 {
+    font-size: 2em;
+    text-align: auto; 
+}
+
+p {
+    font-size: 1.2em;
+    text-align: auto;
+}
+
+form {
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
+label {
+    font-size: 1.2em; 
+    display: block; 
+    margin: 10px 0 5px; 
+}
+
+input {
+    width: 100%; 
+    padding: 10px; 
+    font-size: 1em; 
+    margin-bottom: 15px; 
+}
+
+button {
+    padding: 10px 20px; 
+    font-size: 1.2em; 
+    cursor: pointer; 
+}

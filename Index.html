@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promoções</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="imagem">
+        </div>
+        <div class="overlay">
+            <div class="logo">
+                <img src="../imagens/LOGO_preta.PNG" alt="Logo" class="logo-image">
+            </div>
+        
+            <nav>
+                <ul>
+                    <li><a href="#promocoes">Promoções</a></li>
+                    <li><a href="#pontos-turisticos">Pontos Turísticos</a></li>
+                    <li><a href="#pontos-turisticos">Area Recreativa</a></li>
+                    <li><a href="#pontos-turisticos">Acomodações</a></li>
+                    <li><a href="#fale-conosco" class="button">Fale Conosco</a></li>
+                </ul>
+            </nav>
+            <div class="text-image">
+                <img src="../imagens/escrita_logo.PNG" alt="Texto" class="text-image-content">
+            </div>
+        </div>
+
+    </header>
+    
+    </div>
+        <div class="container_imagem_um">
+            <div class="container_fundo_um">
+            <div class="imagem_home">
+            </div>   
+        </div>
+    </div>
+    </div>
+
+    <div class="header-2">
+        <h1>Promoções Imperdíveis!</h1>
+    </div>
+    <p></p>
+
+    <div class="container">
+        <div class="title">Promoção família</div>
+        <div class="description">Aproveite nossas acomodações com toda sua família.</div>
+        <div class="price">De R$1200,00 por R$960,00</div>
+        <button class="button-2" onclick="showPaymentModal('Promoção 1', 960)">Saiba Mais</button>
+    </div>
+
+    <div class="container">
+        <div class="title">Fim de semana Top</div>
+        <div class="description">Venha conosco e aproveite o descanso que tanto merece.</div>
+        <div class="price">R$1200,00 por R$1000,00</div>
+        <button class="button-2" onclick="showPaymentModal('Promoção 2', 1000)">Saiba Mais</button>
+    </div>
+    
+    <div class="announcement-box">
+        <h2>Aproveite já!!!</h2>
+        <p>Aproveite nossa parceria com o roxinho mais amado do Brasil!</p>
+        <button class="button-2" onclick="participarAgora()">Participe Agora</button>
+    </div>
+
+    <script src="script.js"></script>
+      
+      <div class="container">
+        <div class="title">Promoção romântica</div>
+        <div class="description">Surpreenda quem você ama com uma estadia especial.</div>
+        <div class="price">De R$1200,00 por R$830,00</div>
+        <button class="button-2" onclick="showPaymentModal('Promoção 1', 960)">Saiba Mais</button>
+      </div>
+
+    <div class="container">
+        <div class="title">Fim de ano e feriados</div>
+        <div class="description">Na compra de qualquer pacote você ganha 10% de cashback.</div>
+        <div class="price">Pague R$1200 e receba 10% de cashback</div>
+        <button class="button-2" onclick="showPaymentModal('Promoção 3', 1200)">Saiba Mais</button>
+    </div>
+
+    <div class="container">
+        <div class="title">Aniversário do cliente</div>
+        <div class="description">Aproveite sua data especial conosco,e receba de cortesia um bolo feito com nossos melhores ingredientes.</div>
+        <div class="price">De R$1200,00 por R$870,00</div>
+        <button class="button-2" onclick="showPaymentModal('Promoção 4', 870)">Saiba Mais</button>
+    </div>
+<p></p>
+    <div class="form-container">
+        <h2 style="text-align: center;">Converse conosco!</h2>
+        <form onsubmit="handleSubmit(event)">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit" class="button-2">Enviar</button>
+        </form>
+    </div>
+
+    
+    <div id="paymentModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePaymentModal()">&times;</span>
+            <h2 id="promotionTitle"></h2>
+            <form id="paymentForm" onsubmit="handlePayment(event)">
+                <label for="cardName">Nome no Cartão:</label>
+                <input type="text" id="cardName" required>
+
+                <label for="cardNumber">Número do Cartão:</label>
+                <input type="text" id="cardNumber" required>
+
+                <label for="expiry">Validade (MM/AA):</label>
+                <input type="text" id="expiry" required>
+
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" required>
+
+                <button type="submit" class="button-2">Pagar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <footer id="footer">
+        <div class="icons-container">
+            <div class="icon">
+                <img src="../imagens/ICONE_FACEBOOK.png" width="40px" height="40px" alt="Facebook">
+                <span>Facebook</span>
+            </div>
+            <div class="icon">
+                <img src="../imagens/ICONE_GIITHUB.png" width="40px" height="40px" alt="GitHub">
+                <span>GitHub</span>
+            </div>
+            <div class="icon">
+                <img src="../imagens/ICONE_GOOGLE.png" width="40px" height="40px" alt="Google">
+                <span>Google</span>
+            </div>
+            <div class="icon">
+                <img src="../imagens/icone_instagram.png" width="40px" height="40px" alt="Instagram">
+                <span>Instagram</span>
+            </div>
+            <div class="icon">
+                <img src="../imagens/icone_threads.png" width="40px" height="40px" alt="Threads">
+                <span>Threads</span>
+            </div>
+        </div>
+        <div class="footer-text">
+            <p style="color: white; text-align: center; margin-top: 10px;">© 2024 Vista Serena Hotel. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+
+
