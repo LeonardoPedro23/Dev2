@@ -39,3 +39,4 @@ function handlePayment(event) {
 function participarAgora() {
     window.location.href ='Participação.html';
 }
+

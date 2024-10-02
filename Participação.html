@@ -19,12 +19,27 @@
             <form id="participation-form">
                 <label for="name">Nome:</label>
                 <input type="text" id="name" name="name" required>
-                
+        
                 <label for="card-number">Número do Cartão:</label>
-                <input type="text" id="card-number" placeholder="XXXX XXXX XXXX XXXX" maxlength="19" />
-                
+                <input type="text" id="card-number" name="card-number" placeholder="XXXX XXXX XXXX XXXX" maxlength="19" pattern="\d{4} \d{4} \d{4} \d{4}" required title="Por favor, insira um número de cartão válido no formato XXXX XXXX XXXX XXXX" />
+        
                 <button type="submit">Enviar</button>
             </form>
+        
+            <script>
+                document.getElementById('participation-form').addEventListener('submit', function(event) {
+                    event.preventDefault(); 
+                    window.location.href = 'index.html'; 
+                });
+        
+               
+                document.getElementById('card-number').addEventListener('input', function (e) {
+                    let value = e.target.value.replace(/\D/g, '');
+                    e.target.value = value.replace(/(\d{4})(?=\d)/g, '$1 ');
+                });
+            </script>
+            
+        </form>
         </section>
     </main>
 
